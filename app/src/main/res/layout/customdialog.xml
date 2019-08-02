@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cigarette"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewCigarette"
+                app:layout_constraintStart_toStartOf="@+id/imageViewCigarette"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewCigarette" />
+
+            <ImageView
+                android:id="@+id/imageViewDrugs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/drugs" />
+
+            <ImageView
+                android:id="@+id/imageViewSwearing"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewLying"
+                app:layout_constraintStart_toEndOf="@+id/imageViewYoutube"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewTwitter"
+                app:srcCompat="@drawable/swearing" />
+
+            <ImageView
+                android:id="@+id/imageViewTwitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewInstagram"
+                app:layout_constraintStart_toEndOf="@+id/imageViewFacebook"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewShopping"
+                app:srcCompat="@drawable/twitter" />
+
+            <ImageView
+                android:id="@+id/imageViewLying"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewInstagram"
+                app:layout_constraintTop_toTopOf="@+id/imageViewSwearing"
+                app:srcCompat="@drawable/tellalie" />
+
+            <ImageView
+                android:id="@+id/imageViewInstagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewSugar"
+                app:layout_constraintTop_toTopOf="@+id/imageViewTwitter"
+                app:srcCompat="@drawable/instagram" />
+
+            <ImageView
+                android:id="@+id/imageViewGames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewCigarette"
+                app:layout_constraintTop_toTopOf="@+id/imageViewPorno"
+                app:srcCompat="@drawable/games" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drugs"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewDrugs"
+                app:layout_constraintStart_toStartOf="@+id/imageViewDrugs"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewDrugs" />
+
+            <ImageView
+                android:id="@+id/imageViewShopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewSugar"
+                app:layout_constraintStart_toEndOf="@+id/imageViewFastfood"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewPorno"
+                app:srcCompat="@drawable/shopping" />
+
+            <ImageView
+                android:id="@+id/imageViewAlcohol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewDrugs"
+                app:layout_constraintStart_toEndOf="@+id/imageViewCigarette"
+                app:layout_constraintTop_toTopOf="@+id/imageViewDrugs"
+                app:srcCompat="@drawable/alcohol" />
+
+            <ImageView
+                android:id="@+id/imageViewTelevision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewDrugs"
+                app:layout_constraintTop_toTopOf="@+id/imageViewPorno"
+                app:srcCompat="@drawable/television" />
+
+            <ImageView
+                android:id="@+id/imageViewYoutube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewFacebook"
+                app:layout_constraintTop_toTopOf="@+id/imageViewSwearing"
+                app:srcCompat="@drawable/youtube" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shopping"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewShopping"
+                app:layout_constraintStart_toStartOf="@+id/imageViewShopping"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewShopping" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Youtube"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewYoutube"
+                app:layout_constraintStart_toStartOf="@+id/imageViewYoutube"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewYoutube" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sugar"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewSugar"
+                app:layout_constraintStart_toStartOf="@+id/imageViewSugar"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewSugar" />
+
+            <ImageView
+                android:id="@+id/imageViewFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewFastfood"
+                app:layout_constraintTop_toTopOf="@+id/imageViewTwitter"
+                app:srcCompat="@drawable/facebook" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alcohol"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewAlcohol"
+                app:layout_constraintStart_toStartOf="@+id/imageViewAlcohol"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewAlcohol" />
+
+            <ImageView
+                android:id="@+id/imageViewCigarette"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cigarette" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Porno"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewPorno"
+                app:layout_constraintStart_toStartOf="@+id/imageViewPorno"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewPorno" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instagram"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewInstagram"
+                app:layout_constraintStart_toStartOf="@+id/imageViewInstagram"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewInstagram" />
+
+            <ImageView
+                android:id="@+id/imageViewFastfood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/imageViewGames"
+                app:layout_constraintTop_toTopOf="@+id/imageViewShopping"
+                app:srcCompat="@drawable/fastfood" />
+
+            <ImageView
+                android:id="@+id/imageViewPorno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewTelevision"
+                app:layout_constraintStart_toEndOf="@+id/imageViewGames"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewAlcohol"
+                app:srcCompat="@drawable/porno" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Television"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewTelevision"
+                app:layout_constraintStart_toStartOf="@+id/imageViewTelevision"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewTelevision" />
+
+            <ImageView
+                android:id="@+id/imageViewSugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewTelevision"
+                app:layout_constraintTop_toTopOf="@+id/imageViewShopping"
+                app:srcCompat="@drawable/candy" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fast Food"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewFastfood"
+                app:layout_constraintStart_toStartOf="@+id/imageViewFastfood"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewFastfood" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Games"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewGames"
+                app:layout_constraintStart_toStartOf="@+id/imageViewGames"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewGames" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Twitter"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewTwitter"
+                app:layout_constraintStart_toStartOf="@+id/imageViewTwitter"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewTwitter" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewFacebook"
+                app:layout_constraintStart_toStartOf="@+id/imageViewFacebook"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewFacebook" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swearing"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewSwearing"
+                app:layout_constraintStart_toStartOf="@+id/imageViewSwearing"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewSwearing" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lying"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewLying"
+                app:layout_constraintStart_toStartOf="@+id/imageViewLying"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewLying" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FFFFFF"
+        android:text="Save"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/cancelbutton"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:text="Cancel"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
